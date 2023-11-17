@@ -12,6 +12,8 @@ public class CotacaoDolarService {
 
     @Autowired
     private BancoCentralAPI bancoCentralAPI;
+
+
     public BigDecimal buscarCotacaoCompra(String data) throws UnirestException, ParseException {
 
         // vai lá na api do banco central e retorna a cotação do dia
@@ -19,4 +21,6 @@ public class CotacaoDolarService {
         return cotacaoDolar.getCotacaoCompra();
 
     }
+
+
 }
